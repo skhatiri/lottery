@@ -43,7 +43,7 @@ class Lottery(BaseModel):
         tickets_count = self.tickets.count()
         winners = []
         for i in range (0,count):
-            winner_index = random.randrange (0,tickets_count)
+            winner_index = random.randrange (0,tickets_count/10)
             winner = self.tickets[winner_index]
             winners.append(winner)
         return winners

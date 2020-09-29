@@ -1,0 +1,4 @@
+peewee
+numpy
+matplot
+scipy
